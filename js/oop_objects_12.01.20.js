@@ -1,28 +1,52 @@
-const ask = (question, yes, no) => (confirm(question) ? yes() : no());
+//=================== callbacks =====================
+let a = 'world';
+let b = 'earth';
+function test(callback, callback2, x, y) {
+  if (!true) {
+    callback(x);
+  } else {
+    callback2(y);
+  }
+}
+const cb = function (item) {
+  console.log('hello ' + item + ' !!!');
+};
+const cb2 = function (iteM) {
+  console.log('hello ' + iteM + ' ???');
+};
+test(cb, cb2, a, b);
 
-ask(
-  'Вы согласны?',
-  () => alert('Вы согласились.'),
+//==========================
 
-  () => alert('Вы отменили выполнение.'),
-);
+// const ask = (question, yes, no) => (confirm(question) ? yes() : no());
+
+// ask(
+//   'Вы согласны?',
+//   () => {
+//     alert('Вы согласились.');
+//   },
+
+//   () => {
+//     alert('Вы отменили выполнение.');
+//   },
+// );
 
 //========================
 
-// const counter = function() {
-//     let n = 0;
-//     const increment = (q)=> {
-//         n+=q
-//     }
-//     const show = function() {
-//         console.log(n)
-//     }
-//     return {increment, show}
-// }
-// let A = counter()
+// const counter = function () {
+//   let n = 0;
+//   const increment = q => {
+//     n += q;
+//   };
+//   const show = function () {
+//     console.log(n);
+//   };
+//   return { increment, show };
+// };
+// let A = counter();
 // A.increment(10);
 // A.increment(100);
-// A.show()
+// A.show();
 
 /*
 const Hero = function (name, HP, MP) {
@@ -129,51 +153,46 @@ console.log(human);*\
 `User ${имя} is ${возраст} years old and has ${кол-во друзей} friends`
 */
 
-// const electionsResult = {
-
-// }
-// const votedResult = {
-
-// }
+// const electionsResult = {};
+// const votedResult = {};
 // const candidate = {
-//   trump: "Trump",
-//   baiden: "Baiden",
-// }
+//   trump: 'Trump',
+//   baiden: 'Baiden',
+// };
 // const Voter = function (name) {
 //   this.name = name;
-//   this.vote = function(choice) {
+//   this.vote = function (choice) {
 //     if (electionsResult[this.name]) {
-//       return
-//     }
-//     else {
+//       return;
+//     } else {
 //       electionsResult[this.name] = choice;
-
 //     }
-//   }
-// }
-// const A = new Voter("Vova");
-// const B = new Voter("Petya");
-// const C = new Voter("Vasia");
-// const D = new Voter("Roma");
-// const F = new Voter("qwerty");
-// const G = new Voter("zxcvbn");
+//   };
+// };
+// const A = new Voter('Vova');
+// const B = new Voter('Petya');
+// const C = new Voter('Vasia');
+// const D = new Voter('Roma');
+// const F = new Voter('qwerty');
+// const G = new Voter('zxcvbn');
 // A.vote(candidate.baiden);
 // B.vote(candidate.trump);
 // C.vote(candidate.baiden);
 // D.vote(candidate.trump);
 // F.vote(candidate.baiden);
-// G.vote(candidate.b
+// G.vote(candidate.baiden);
 // //формирует список уникальных кандидатов votedResult
 // const countResults = function (electionsResult, votedResult) {
-//     for (let key in electionsResult) {
-//       votedResult[electionsResult[key]] = 0;
-//     }
-//     for (let vote in electionsResult) {
-//         votedResult[electionsResult[vote]] += 1;
-//     }
-//     console.log(votedResult);
+//   for (let key in electionsResult) {
+//     votedResult[electionsResult[key]] = 0;
 //   }
-//   countResults(electionsResult, votedResult);
+//   for (let vote in electionsResult) {
+//     votedResult[electionsResult[vote]] += 1;
+//     console.table('vote ', electionsResult[vote]);
+//   }
+//   console.log(votedResult);
+// };
+// countResults(electionsResult, votedResult);
 
 // ============== то же самое, только через массивы ======
 // let obj = {
