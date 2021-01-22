@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Task about Game with 😍 */
+.smile {
+  animation: pulse 0.5s linear infinite alternate;
+}
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+/* Task about square which running on the screen */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+}
+
+.range {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+/* Task with ---- form */
+
+.modal {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: blanchedalmond;
+  border: 1px solid red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color-text {
+  font-size: 18px;
+  color: royalblue;
+}
+
+.square-black {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  transition: 0.3s linear;
+}
+/* -------------tnd of form stiles---------- */

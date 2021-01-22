@@ -1,0 +1,38 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  /* width: 100%; */
+  height: auto;
+}
+
+.container {
+  overflow: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+  /* border-radius: 5%; */
+}
+.img {
+  max-width: 100%;
+  margin-left: 15px;
+}
+.title {
+  text-align: center;
+}
+
+.text {
+  margin-left: 20px;
+}

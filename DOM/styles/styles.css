@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.user-list {
+  width: 80%;
+  margin: 0, auto;
+  background-color: grey;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-item {
+  width: 200;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.user-item > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle2 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.square {
+  position: relative;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: green;
+  border: 1px solid red;
+
+  width: 400px;
+  height: 400px;
+}
+
+.color-text {
+  font-size: 18px;
+  color: blue;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  margin: 5px;
+}

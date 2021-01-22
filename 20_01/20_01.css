@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  /* background-color: tomato; */
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.red-button {
+  position: absolute;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-image: url(./img/red-btn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.pressed {
+  background-image: url(./img/red-btn-p.png);
+}
+.text-message {
+  font-family: sans-serif;
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+.animated-button {
+  animation: moves 2s linear infinite alternate;
+}
+@keyframes moves {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  70% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fake-button {
+  position: absolute;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-image: url(./img/red-btn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* cursor: pointer; */
+}
+
+
+/* ______________Calculator */
+.calculator {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(138, 138, 138);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.output {
+  width: 95%;
+  margin: 0 auto;
+  height: 50px;
+  background-color: rgb(197, 197, 197);
+  text-align: right;
+}
+.buttons {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+.numbers {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.number {
+  width: 30%;
+  height: 50px;
+}
+.operators {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.operator {
+  height: 30px;
+}
+
+
+/* --------------------------- */
